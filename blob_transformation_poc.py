@@ -63,5 +63,5 @@ def main():
     df_main = read_blob_into_df_and_transform(source_blobs=source_blobs, container_name="landing-zone")
     upload_transformed_df_to_tz(df_transformed=df_main, tz_container="trusted-zone")
 
-
-main()
+if __name__ == '__main__':
+    main()
